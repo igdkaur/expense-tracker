@@ -1,16 +1,17 @@
 import React from "react";
 
-const ExpenseItem = () => {
-  const title = "food";
-  const expenseDate = new Date(2021,9,9)
-  const amount = 20;
+const ExpenseItem = (props) => {
+
+
   return (
     <div>
-      <div>{title}</div>
-      <div>{expenseDate.toISOString()}</div>
-      <div>{amount}</div>
+      <div>{props.title}</div>
+      <div>{props.expenseDate.toISOString()}</div>
+      <div>{props.amount}</div>
     </div>
   );
 };
 
 export default ExpenseItem;
+
+// now move expense to app.js as an array of objects and pass it to expense item 
