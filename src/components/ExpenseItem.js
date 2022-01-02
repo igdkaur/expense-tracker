@@ -16,4 +16,3 @@ const ExpenseItem = (props) => {
 
 export default ExpenseItem;
 
-// now move expense to app.js as an array of objects and pass it to expense item
