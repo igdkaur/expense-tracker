@@ -9,7 +9,13 @@ const ExpenseForm = () => {
 
   const handleSubmit = (event) =>{
     event.preventDefault()
-    
+     
+    const expenseData = {
+      title : title,
+      amount : amount,
+      date : new Date (date) //memorise
+    }
+    console.log(expenseData)
   }
 
   const handleTitleChange = (event) =>{
