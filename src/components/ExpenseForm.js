@@ -3,29 +3,24 @@ import './ExpenseForm.css'
 
 const ExpenseForm = () => {
 
-  const handleAmount = (event) =>{
+  const handleChange = (event) =>{
     console.log(event.target.value)
   }
-  const handlDate = (event) =>{
-    console.log(event.target.value)
-  }
-  const handleDate = (event) =>{
-    console.log(event.target.value)
-  }
+ 
   return (
     <form >
       <div className='new-expense__controls'>
         <div className='new-expense__control'>
           <label>Title</label>
-          <input type='text' onChange={handlDate} />
+          <input type='text' onChange={handleChange} />
         </div>
         <div className='new-expense__control'>
           <label>Amount</label>
-          <input type='number' min='0.01' step='0.01' onChange={handleAmount}/>
+          <input type='number' min='0.01' step='0.01' onChange={handleChange}/>
         </div>
         <div className='new-expense__control'>
           <label>Date</label>
-          <input type='date' min='2019-01-01' max='2022-12-31' onChange={handleDate}/>
+          <input type='date' min='2019-01-01' max='2022-12-31' onChange={handleChange}/>
         </div>
       </div>
       <div className='new-expense__actions'>
