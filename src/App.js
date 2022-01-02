@@ -1,5 +1,5 @@
-import ExpenseItem from "./components/ExpenseItem";
-import NewExpense from "./components/NewExpense";
+import ExpenseItem from "./components/Expenses/ExpenseItem";
+import NewExpense from "./components/NewExpense/NewExpense";
 import React,{useState} from 'react';
 
 const defaultExpenses = [
@@ -42,7 +42,7 @@ function App() {
         key = {e.id}
         title={e.title}
         amount={e.amount}
-        expenseDate={e.date}
+        date={e.date}
       />)}     
     </div>
   );
