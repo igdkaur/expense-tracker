@@ -1,6 +1,7 @@
-import ExpenseItem from "./components/Expenses/ExpenseItem";
+
 import NewExpense from "./components/NewExpense/NewExpense";
 import React,{useState} from 'react';
+import Expenses from "./components/Expenses/Expenses";
 
 const defaultExpenses = [
   {
@@ -37,13 +38,14 @@ function App() {
   return (
     <div>
       <NewExpense onAddExpense = {handleOnAddExpense}/>
+      <Expenses items = {expenses}/>
        
-      {expenses.map(e => <ExpenseItem
+      {/* {expenses.map(e => <ExpenseItem
         key = {e.id}
         title={e.title}
         amount={e.amount}
         date={e.date}
-      />)}     
+      />)}      */}
     </div>
   );
 }

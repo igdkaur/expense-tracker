@@ -11,7 +11,7 @@ const handleSave = (enteredExpenseData) => {
   const expenseData = { ...enteredExpenseData, 
   id:Math.random().toString()
 }
-props.onAddExpense (expenseData);
+props.onAddExpense(expenseData);
 
 
 }
